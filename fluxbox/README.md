@@ -10,3 +10,5 @@ Colors
 - [#cccccc](https://hexcolorcodes.org/hex-code/cccccc)
 
 Font is [Terminus](https://terminus-font.sourceforge.net/)
+
+[DevTerm Fluxbox Theme](https://forum.clockworkpi.com/t/devterm-fluxbox-theme/9611) forum post.

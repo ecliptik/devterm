@@ -8,7 +8,7 @@ This Xorg config will,
 - Map YBXA to hjk
 - Disable the joystick as a mouse
 
-Install `xserver-xorg-input-joystick` package on Debian/Ubuntu, create the following configuration in /etc/X11/xorg.conf.d/51-joystick.conf, and restart Xorg.
+Install `xserver-xorg-input-joystick` package on Debian/Ubuntu, create the following configuration in `/etc/X11/xorg.conf.d/51-joystick.conf`, and restart Xorg.
 
 ```
 Section "InputClass"
@@ -35,3 +35,5 @@ Section "InputClass"
   Option "MapAxis4" "mode=accelerated keylow=111 keyhigh=116" #up/down
 EndSection
 ```
+
+[Mapping DevTerm R-01 Gamepad to Keys in Xorg](https://forum.clockworkpi.com/t/mapping-devterm-r-01-gamepad-to-keys-in-xorg/9596) forum post.
