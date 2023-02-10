@@ -2,6 +2,8 @@
 
 These are my notes for running [Tailscale](https://tailscale.com/) for the DevTerm-R01.
 
+Note this is pre Linux 6.2, which will have proper [Allwinner D1](https://www.phoronix.com/news/Linux-6.2-Sun4i-A100-D1) support rendering many of these instructions obsolete.
+
 Tailscale will not install due to missing the `tun.ko` module which is not included in the default R-01 kernel. Trying to start `tailscaled` will give the following error in `/var/log/syslog`
 
 ```
@@ -18,9 +20,9 @@ Jan 26 02:25:19 localhost tailscaled[1074605]: logger closing down
 
 ## Building Kernel
 
-Will cross-compile kernel on x86 in a Ubuntu 22.04 VM.
+It is faster to cross-compile kernel on x86 in a Ubuntu 22.04 VM, if done on the R-01 it could take a very long time.
 
-https://github.com/clockworkpi/DevTerm/wiki/Create-DevTerm-R01-OS-image-from-scratch#how-to-compile-kernel
+Also see: https://github.com/clockworkpi/DevTerm/wiki/Create-DevTerm-R01-OS-image-from-scratch#how-to-compile-kernel
 
 ### Install Required Packages
 
